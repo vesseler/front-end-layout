@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <mate charest="utf-8" />
+        <title>Demo</title>
+    </head>
+    <body>
+ <!-- 1、最常用使用方法输入： ‘ <a ’ 的时候在输入： ‘ > ’就可以自动补齐  -->
+    <a
+    <a></a>
+
+    <!-- 2、输入‘b’，按下Tab键,可以快速创建b标签 -->
+    b
+    <b></b>
+
+    <!-- 3、输入：‘ span#app ’，按下Tab，可以快速创建id为‘app’的‘span’标签 -->
+    span#app
+    <span id="app"></span>
+
+    <!-- 4、输入：‘ div.app ’,按下Tab键，可以快速创建class为‘app’的’‘div’标签 -->
+    div.app
+    <div class="app"></div>
+
+    <!-- 5、输入：‘ ul>li*3 ’,按下Tab键可以快速创建‘ ul ’下的3个‘ li ’标签 -->
+    ul>li*3
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <!-- 6、输入：‘ ul.menu>li*3>a[href=#]{创建一个class为‘ menu ’的‘ ul ’标签
+    包裹住3个li标签下包裹住超链接a标签的内容为this！} -->
+    ul.menu>li*3>a[href=#]{创建一个class为‘ menu ’的‘ ul ’标签包裹住3个li标签下
+    包裹住超链接a标签的内容为this！}
+    <ul class="menu">
+        <li><a href="#">创建一个class为‘ menu ’的......的内容为this！</a></li>
+        <li><a href="#">创建一个class为‘ menu ’的......的内容为this！</a></li>
+        <li><a href="#">创建一个class为‘ menu ’的......的内容为this！</a></li>
+    </ul>
+
+    <!-- 7、输入 ‘ ul>li*5>a[href=#]{我序号是$} ’ -->
+    ul>li*5>a[href=#]{我序号是$}
+    <ul>
+        <li><a href="#">我序号是1</a></li>
+        <li><a href="#">我序号是2</a></li>
+        <li><a href="#">我序号是3</a></li>
+        <li><a href="#">我序号是4</a></li>
+        <li><a href="#">我序号是5</a></li>
+    </ul>
+
+    <!-- 8、输入： ‘  [img src="image/$.jpg" alt="new$"]*3 ’ -->
+    img[src="image/$.jpg" alt="new$"]*3
+    <img src="image/1.jpg" alt="new1">
+    <img src="image/2.jpg" alt="new2">
+    <img src="image/3.jpg" alt="new3">
+
+    <!-- 9、输入a[href=#] 按下Tab键，可以快速创建带超链接的a标签 -->
+    a[href=#]
+    <a href="#"></a>
+
+    <!-- 10、输入 ‘ form：get/form:post ’ ，可以快速创建get传参的form表单 -->
+    form:get
+    <form action="" method="get"></form>
+    form:post
+    <form action="" method="post"></form>
+
+    <!-- 11、输入：‘ input：button ’，按下Tab键，可以快速创建input类型为button. PS其他类型也一样！ -->
+    input:button
+    <input type="button" value="">
+
+    <!-- 12、输入： ‘ a:link ’ ，可以快速创建<a href="http://"></a> -->
+    a:link
+    <a href="http://"></a>
+
+    <!-- 13、输入： ‘ div.news1+div.news2 ’,按下Tab键，可快速创建并列标签 -->
+    <div class="news1"></div>
+    <div class="news2"></div>
+
+    <!-- 14、输入： ‘ link ’， 按下Tab键，可快速创建<link rel="stylesheet" href=""> -->
+    <link rel="stylesheet" href="">
+
+    <!-- 15、输入： ‘ link:css ’, 按下Tab键，可快速创建<link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- 16、输入： ‘ script:src ’,按下Tab键，可快速创建<script src=""></script> -->
+    script:src
+    <script src=""></script>
+    </body>
+</html>

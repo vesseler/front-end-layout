@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = 'utf-8'>
+        <title>text sdf</title>
+		<!-- text-align只控制行内内容(文字、行内元素、行内块级元素)如何相对他的块父元素对齐 -->
+		<!-- 重点在控制的是行内 的 内容，列下面的p标签过长就是一个很好的列子 -->
+    <style>
+        .a {height: 200px; width: 300px;background-color: blue;text-align: center;}
+        .b {
+			height: 100px; 
+			width: 200px;
+			background-color: red;
+			/* 改为行内或者行内块级形式 */
+			/* display: inline-block; */
+		}
+        p {width: 610px;}
+    </style>
+    </head>
+    <body>
+        <div class="a">
+            <p>123</p>	<!-- 只有后代行内内容中宽度小于设置text-align属性的元素宽度的时候，才会水平居中 -->
+            <div class="b"></div>	<!-- 只对行内内容有效； -->
+        </div>
+    </body>
+</html>

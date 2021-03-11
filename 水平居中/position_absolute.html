@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.a {
+				width: 400px;
+				height: 200px;
+				background-color: #0000FF;
+				position: relative;
+				/* no */
+				/* padding-left: 50%; */
+			}
+			.b {
+				width: 320px;
+				height: 50px;
+				background-color: #FF0000;
+				position: absolute;
+				transform: translateX(-50%);
+				/* margin-left: 50%; */		
+				left: 50%;
+			}
+			/* 不管是块级还是行内元素都可以实现 */
+			.c {
+				width: 320px;
+				height: 50px;
+				background-color: gray;
+				position: absolute;
+				transform: translateX(-50%);
+				/* margin-left: 50%; */		
+				left: 50%;
+				display: inline-block;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="a">
+			<div class="b"></div>
+			<!-- 此方法会脱离文档流 -->
+			<p>这是一段完整的语句这是一段完整的语句这是一段完整的语句这是一段完整的语句
+			这是一段完整的语句这是一段完整的语句这是一段完整的语句这是一段完整的语句
+			</p>
+			<div class="c"></div>
+		</div>
+	</body>
+</html>
