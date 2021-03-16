@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			#parent{
+			    height: 500px;
+			    line-height: 500px;
+			    font-size: 0; 
+				/* font-size:0;建议加上这样更精确 */
+				background-color: blue;
+			}
+			#son{vertical-align: middle;} /*默认是基线对齐，改为middle*/
+		</style>
+	</head>
+	<body>
+		<div id="parent">
+			<img src="../imgs/1.jpg" alt="" id="son">
+		</div>
+	</body>
+</html>
