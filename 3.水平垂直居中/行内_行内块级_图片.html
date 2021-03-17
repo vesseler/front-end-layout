@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.parent{
+			    height: 750px;
+				background-color: palevioletred;
+			    line-height: 750px;  /*行高的值与height相等*/
+			    text-align: center;
+			    font-size: 0;   /*消除幽灵空白节点的bug*/
+			}
+			.son{
+			    /*display: inline-block;*/  /*如果是块级元素需改为行内或行内块级才生效*/
+			    vertical-align: middle;
+			}
+
+		</style>
+	</head>
+	<body>
+		<!-- 原理：text-align: center; 控制行内内容相对于块父元素水平居中,
+		然后就是line-height和vertical-align的基友关系使其垂直居中，
+		font-size: 0; 是为了消除近似居中的bug -->
+		<div class="parent">
+			<img src="../imgs/1.jpg" alt="" class="son">
+		</div>
+	</body>
+</html>
