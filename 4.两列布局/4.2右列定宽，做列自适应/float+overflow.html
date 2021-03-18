@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			#left {
+			    
+			    height: 500px;
+			    background-color: #f00;
+				overflow: hidden;  /*触发bfc*/
+			}
+			#right {
+			    margin-left: 0px;  /*margin需要定义在#right中*/
+			    float: right;
+			    width: 100px;
+			    height: 500px;
+			    background-color: #0f0;
+			}
+			
+
+		</style>
+	</head>
+	<body>
+	<div id="parent">
+		<p>****这里的顺序很</p>
+	    <div id="right">右列定宽</div>
+	    <div id="left">左列自适应</div>   <!--顺序要换一下-->
+	</div>
+	</body>
+	
+
+</html>
