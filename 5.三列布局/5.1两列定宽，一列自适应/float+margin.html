@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			#parent {min-width: 800px;}
+			/* 防止因为宽度不够而被挤下来 */
+			#left {height: 400px;width: 400px;background-color: #0000FF;float: left;}
+			#center {height: 400px;width: 200px;background-color: red;float: left;}
+			#right {height: 400px;background-color: #00FF00;margin-left: 400px;}
+		</style>
+	</head>
+	<body>
+		<div id="parent">
+		    <div id="left">左列定宽</div>
+		    <div id="center">中间定宽</div>
+		    <div id="right">右列自适应</div>
+		</div>
+	</body>
+</html>

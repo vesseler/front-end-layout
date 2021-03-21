@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			#parent{
+			    min-width: 300px; /*100+10+200+20,防止宽度不够,子元素换行*/
+			}
+			#left {
+			    float: left;
+			    width: 100px;
+			    height: 500px;
+			    background-color: #f00;
+			}
+			#center{
+			    float: left;
+			    width: 200px;
+			    height: 500px;
+			    background-color: #eeff2b;
+			}
+			#right {
+			    overflow: hidden;
+			    height: 600px;
+			    background-color: #0f0;
+			}
+			
+
+		</style>
+	</head>
+	<body>
+		<div id="parent">
+		    <div id="left">左列定宽</div>
+		    <div id="center">中间定宽</div>
+		    <div id="right">右列自适应</div>
+		</div>
+	</body>
+</html>
